@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+h1 {
+  margin: 50px 0 50px 0;
+  text-align: center;
+}
+
+h3 {
+  float: right;
+  background-color: #FF0000;
+  width: 33.33%;
+  text-align: center;
+  outline: 1px solid;
+}
+
+article {
+  background-color: #C0C0C0;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  outline: 1px solid;
+}
+
+p {
+  clear: right;
+  padding: 10px;
+}
+
+#chicken-menu > article {
+  background-color: #e49b83
+}
+
+#beef-menu > article {
+  background-color: #e77a87
+}
+
+#sushi-menu > article {
+  background-color: #9eded4
+}
+
+
+#chicken-menu > article > h3 {
+  background-color: #da5f37
+}
+
+#beef-menu > article > h3 {
+  background-color: #cf1d32
+}
+
+#sushi-menu > article > h3 {
+  background-color: #3ee9d0
+}
+
+.row {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .lg-half, .lg-thirth {
+    float: left;
+  }
+
+  .lg-half {
+    width: 50%;
+  }
+
+  .lg-thirth {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .md-full, .md-half {
+    float: left;
+  }
+
+  .md-half {
+    float: left;
+    width: 50%;
+  }
+
+  .md-full > article {
+    width: 97.5%;
+  }
+
+  .md-full > article > h3 {
+    width: 16.2%;
+  }
+}
